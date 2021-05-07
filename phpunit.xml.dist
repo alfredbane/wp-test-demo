@@ -9,8 +9,10 @@
 	>
 	<testsuites>
 		<testsuite name="WP unit test demo">
-			<directory prefix="test-" suffix=".php">./tests/</directory>
-			<exclude>./tests/test-sample.php</exclude>
+			<whitelist>
+				<directory prefix="test-" suffix=".php">./tests/</directory>
+				<exclude>./tests/test-sample.php</exclude>
+			</whitelist>
 		</testsuite>
 	</testsuites>
 </phpunit>
