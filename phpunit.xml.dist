@@ -13,4 +13,15 @@
 			<exclude>./tests/test-sample.php</exclude>
 		</testsuite>
 	</testsuites>
+	<filter>
+        <whitelist addUncoveredFilesFromWhitelist="false">
+            <directory suffix=".php">wordpress/wp-admin</directory>
+            <directory suffix=".php">wordpress/wp-includes</directory>
+            <exclude>
+                <directory suffix=".php">wordpress/wp-includes/ID3</directory>
+                <directory suffix=".php">wordpress/wp-includes/SimplePie</directory>
+                <directory suffix=".php">wordpress/wp-includes/Text</directory>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>
