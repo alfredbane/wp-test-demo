@@ -7,8 +7,8 @@
 	convertNoticesToExceptions="true"
 	convertWarningsToExceptions="true"
 	>
-	<testsuites name="WP unit test demo">
-		<testsuite>
+	<testsuites>
+		<testsuite name="WP unit test demo">
 			<directory prefix="test-" suffix=".php">./tests/</directory>
 			<exclude>./tests/test-sample.php</exclude>
 		</testsuite>
